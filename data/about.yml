@@ -1,0 +1,64 @@
+# work process
+work_process:
+  enable : true
+  title : "Education"
+  item:
+  - title : "MS by Research"
+    icon : "images/icons/iiith.png"
+    year : "Duration: 2021 -- 2023"
+    academy : "International Institute of Information Technology, Hyderabad"
+    fieldofstudy : Computer Science and Engineering 
+    score: "CGPA: --Not yet started--"
+    subjects: "__Courses:__ Statistical Methods in AI; Digital Image Processing; Data Analytics I"
+
+  - title : "5 Year BS-MS Dual Degree"
+    icon : "images/icons/iiserk.png"
+    year : "Duration: 2016 -- 2021"
+    academy : "Indian Institute of Science Education and Research, Kolkata"
+    fieldofstudy : Mathematics and Statistics 
+    score: "CGPA: 8.16"
+    subjects: "__Courses:__ Programming and Data Structures II; C & Data Structures; Statistical Machine Learning & Network Analysis;
+    Regression Analysis; Time-Series Analysis; Micro Economics; Multivariate Statistics; Statistics II (Computational); Statistical Inference I & II;
+    Statistics Lab (with R); Probability I & II; Topology; Measure Theory; Commutative Algebra; Ring Theory; Group Theory; Advanced Linear Algebra; Linear Algebra I; 
+    Real Analysis I & II; Complex Analysis; Graph Theory; Numerical Analysis"
+    
+  - title : "All India Senior Secondary Certificate Examinations"
+    icon : "images/icons/dav.png"
+    year : "Duration: 2014 -- 2016"
+    academy : "DAV Kalinga, MCL Area, Talcher, Angul"
+    fieldofstudy : Science 
+    score: "Percentage: 96.83%"
+    subjects: "__Subjects:__ Mathematics; Physics; Chemistry; Biology; English; Physical Education"
+    
+  - title : "All India Higher Secondary Examination"
+    icon : "images/icons/mvm.png"
+    year : "Duration: 2004 -- 2014"
+    academy : "Maharishi Vidya Mandir, Angul"
+    fieldofstudy : General
+    score: "CGPA: 10"
+    subjects: "__Subjects:__ Maths; Science; Social Sciences; English; Odia"
+
+
+# team
+team:
+  enable: true
+  title : "My Team"
+  team_member:
+    - title : "Jack Schenziwe"
+      image : "images/team/member-1.png"
+      designation : "Project Manager"
+      
+    - title : "Julias Carlie"
+      image : "images/team/member-2.png"
+      designation : "Web Developer"
+      
+    - title : "John Doe"
+      image : "images/team/member-3.png"
+      designation : "Designer"
+
+
+# client logo slider
+clients_logo_slider:
+  enable : false
+  title : "My Clients"
+  # clients logo comes from 'data/homepage.yml' file

@@ -1,0 +1,178 @@
+# banner
+banner:
+  title : "<br>Hey<span style = 'color:#33ff33'>!</span> I’m Aditya <br> <span style = 'font-size:30px;color:#979797'>A Data Scientist & Product Enthusiast</span>"
+
+# about
+about:
+  enable : true
+  content : "College graduate with a strong computer science background and experience in exploratory data analysis, machine learning, and statistics. As a Passionate about learning new topics in data science, visualizing data, and doing research. I am like sharing valuable insights and making an impact that helps others learn through.
+code, visualizations, and narratives. Frequent competitor at Kaggle competitions. I’m always open for discussions, so feel free to ask any questions or concerns, I will."
+  button:
+    enable : true
+    label : "know more"
+    URL : "about"
+
+# skill
+skill:
+  enable : true
+  title : "Expertise"
+  item:
+    - title : "Machine Learning & Deep Learning"
+      progress : "95%"
+      color : "#fdb157"
+      description: "Essential Libraries: Numpy, Scikit-Learn, Tensorflow, Keras, PyTorch, & OpenCV"
+      
+    - title : "Data Analysis and Visualization"
+      progress : "80%"
+      color : "#9473e6"
+      description: "Libraries: Tablaeu, Seaborn, Pandas, GNUPlot, Origin"
+      
+    - title : "Other Software and Tools"
+      progress : "75%"
+      color : "#bdecf6"
+      description: "Matlab, R, C, Git, LATEX"
+      
+    - title : "Web Design"
+      progress : "50%"
+      color : "#ffbcaa"
+      description: "HTML, CSS, JS"
+
+# experience
+experience:
+  enable : true
+  title : ""
+  item: 
+    - logo : "images/experience/icon-1.png"
+      title : "Junior UX Designer"
+      company : "WEBEX"
+      duration : "Jan 2007 - Feb 2009"
+      
+    - logo : "images/experience/icon-2.png"
+      title : "UX & UI Designer"
+      company : "AUGMEDIX"
+      duration : "Mar 2009 - Aug 2014"
+      
+    - logo : "images/experience/icon-1.png"
+      title : "Senior UI Designer"
+      company : "THEMEFISHER"
+      duration : "Sep 2014 - Present"
+
+# education
+education:
+  enable : true
+  title : "Education"
+  item:
+      
+    - title : "MS by Research"
+      year : "Present"
+      academy : "International Institute of Information Technology, Hyderabad"
+      #score: "CGPA: --Not yet started--"
+      #subjects: ""
+
+    - title : "5 Year BS-MS Dual Degree"
+      year : "2021"
+      academy : "Indian Institute of Science Education and Research, Kolkata"
+      #score: "CGPA: 8.16"
+      #subjects: "Mathematics and Statistics"
+      
+    - title : "All India Senior Secondary Certificate Examinations"
+      year : "2016"
+      academy : "DAV Kalinga, MCL Area, Talcher, Angul"
+      #score: "Percentage: 96.83%"
+      #subjects: "Mathematics, Physics, Chemistry, Biology, English, Physical Education"
+      
+    - title : "All India Higher Secondary Examination"
+      year : "2014"
+      academy : "Maharishi Vidya Mandir, Angul"
+      #score: "CGPA: 10"
+      #subjects: "Maths, Science, Social Sciences, English, Odia"
+
+# service
+service:
+  enable : true
+  title : "Services"
+  item:
+    - title : "Image Analysis & Processing"
+      icon : "ti-image"
+      content : "Extraction of meaningful information from digital images by means of digital image processing techniques like 2D object recognition, video tracking, image segmentation, medical scan analysis, 3D Pose Estimation."
+      highlighted : false
+
+    - title : "Data Analysis & Visualization"
+      icon : "ti-bar-chart"
+      content : "Analyze data and use the derived information to arrive at a good business decision with specialized software and system. Also visualize the same graphically in the form of pictorial or graphical format(Example: charts, graphs, and maps)."
+      highlighted : true
+
+    - title : "Modeling E2E ML Pipelines "
+      icon : "ti-loop"
+      content : "Codify and automate the machine learning workflow in an End-to-End fashion.<br> Consists of multiple sequential steps that do everything from data and feature extraction, pre-processing to model training and deployment. "
+      highlighted : false
+
+# blog
+blog:
+  enable : true
+  title : "Projects"
+  URL: "blog"
+  # blog post comes from "content/blog" folder
+
+# portfolio
+portfolio:
+  enable : true
+  title : "My Photos"
+  item_show : 5
+  URL : "portfolio"
+  # portfolio item comes from 'data/portfolio.yml' item.
+
+# testimonial
+testimonial:
+  enable : true
+  title : "Testimonials"
+  item:
+    - name : "Jesica Gomez"
+      image : "images/testimonial/client-1.png"
+      designation : "CEO, Funder"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      
+    - name : "Shirley Scot"
+      image : "images/testimonial/client-1.png"
+      designation : "CEO, Funder"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      
+    - name : "Jessica Julie"
+      image : "images/testimonial/client-1.png"
+      designation : "CEO, Funder"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+
+# client logo slider
+clients_logo_slider:
+  enable : true
+  item:
+    - logo : "images/clients-logo/client-logo-1.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-2.png"
+      URL : "#"
+      
+    - logo : "images/clients-logo/client-logo-3.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-4.png"
+      URL : "#"
+      
+    - logo : "images/clients-logo/client-logo-5.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-1.png"
+      URL : "#"
+      
+    - logo : "images/clients-logo/client-logo-2.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-3.png"
+      URL : "#"
+      
+    - logo : "images/clients-logo/client-logo-4.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-5.png"
+      URL : "#"
+
