@@ -469,6 +469,77 @@ textarea.form-control {
 .card-footer {
   border: 0
 }
+/*************************************************Modal CSS*************************************************************/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 700px;
+  background-color:rgb(27, 22, 22);
+  position:relative;
+  padding:0;
+  outline:0
+}
+/* Add Animation */
+.modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: relative;
+  top: 15px;
+  right: 35px;
+  color: #001a33;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/******************************************************************************************************************/
+
 
 .navigation {
   padding: 40px 130px;
@@ -670,7 +741,9 @@ textarea.form-control {
 }
 
 .hover-wrapper:hover img {
-  transform: scale(1)
+  transform: scale(1);
+  opacity: 0.7;
+  cursor: pointer
 }
 
 .hover-wrapper:hover .hover-overlay {
@@ -776,7 +849,7 @@ textarea.form-control {
 .shadow-down::before {
   position: absolute;
   content: "";
-  box-shadow: 0 0 80.75px 14.25px rgba(71, 77, 82, 0.37);
+  box-shadow: 0 0 40.75px 14.25px rgba(71, 77, 82, 0.37);
   height: 100%;
   width: 100%;
   left: 0;

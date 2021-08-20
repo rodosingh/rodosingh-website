@@ -8,7 +8,7 @@ work_process:
     year : "Duration: 2021 -- 2023"
     academy : "International Institute of Information Technology, Hyderabad"
     fieldofstudy : Computer Science and Engineering 
-    score: "CGPA: --Not yet started--"
+    score: "CGPA: --Not yet finished first Sem--"
     subjects: "__Courses:__ Statistical Methods in AI; Digital Image Processing; Data Analytics I"
 
   - title : "5 Year BS-MS Dual Degree"
@@ -41,7 +41,7 @@ work_process:
 
 # team
 team:
-  enable: true
+  enable: false
   title : "My Team"
   team_member:
     - title : "Jack Schenziwe"

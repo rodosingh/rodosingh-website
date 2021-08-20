@@ -54,8 +54,7 @@
         <div class="row">
             <div class="col-lg-10 mx-auto text-left">
                 {{ with site.Data.homepage.about }}
-                <p class="font-secondary lead text-dark p3"><img src="images/about/author.jpg" alt="Aditya Kumar Singh"
-                        height="250" class = "img-author-class">{{.content | markdownify}}</p>
+                <p class="font-secondary lead text-dark p3"><img src="images/about/author.jpg" alt="Aditya Kumar Singh"  height = "310" class = "img-author-class">{{.content | markdownify}}</p>
                 {{ if .button.enable }} {{ with .button }}
                 <div style = "text-align: center; margin: 40px; position: relative;">
                     <a href="{{ .URL | absURL }}" class="cv-button" style="color: #001a33; border-radius:10px">{{.label}}</a>
@@ -240,7 +239,7 @@
 {{ end }}
 
 {{ if site.Data.homepage.portfolio.enable }}
-<!-- portfolio -->
+<!-- my photos -->
 <section class="section">
     <div class="container">
         <div class="row">
@@ -250,7 +249,7 @@
         </div>
         <div class="row shuffle-wrapper">
             {{ $item:= site.Data.homepage.portfolio.item_show }} {{ range first $item (where .Site.RegularPages
-            "Section" "portfolio") }}
+            "Section" "blog") }}
             <div class="col-lg-4 col-6 mb-4 shuffle-item">
                 <div class="position-relative rounded hover-wrapper">
                     <img src="{{.Params.image | absURL }}" alt="portfolio-image"
@@ -269,24 +268,24 @@
         </div>
     </div>
 </section>
-<!-- /portfolio -->
+<!-- /my photos -->
 {{ end }}
 
 {{ if site.Data.homepage.blog.enable }}
-<!-- blog -->
+<!-- projects -->
 <section class="section">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
                 <h2 class="section-title">{{site.Data.homepage.blog.title | markdownify }}</h2>
             </div>
-            {{ range first 3 (where .Site.RegularPages "Section" "blog")}} {{ .Render "post" }} {{ end }}
+            {{ range first 3 (where .Site.RegularPages "Section" "portfolio")}} {{ .Render "post" }} {{ end }}
         </div>
         <div style="text-align: center; width:100%; text-align: center; margin: 20px">
             <a href="{{ site.Data.homepage.blog.URL | absURL }}" style="bottom: 0; border-radius: 10px" class="cv-button">View All</a>
         </div>
     </div>
 </section>
-<!-- /blog -->
+<!-- /projects -->
 {{ end }}
 {{ end }}

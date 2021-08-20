@@ -28,13 +28,12 @@
       </div>
       <div class="col-md-4 text-center drag-lg-top">
         <div class="shadow-down mb-4">
-          <img src="{{.Params.author_image | absURL }}" alt="author"
-            class="img-fluid w-100 rounded-lg border-thick border-white">
+          <img src="{{.Params.author_image | absURL }}" alt="author" class="img-fluid w-100 rounded-lg border-thick border-white">
         </div>
-        <img src="{{.Params.author_signature | absURL }}" alt="signature" class="img-fluid">
+        <img src="{{.Params.author_signature | absURL }}" alt="signature" class="img-fluid" width = "270">
         <h4>{{ site.Params.Author }}</h4>
         <div style="margin: 25px; width: 320px;">
-          <a class="cv-button" , href="{{site.Params.cv_url}}">
+          <a class="cv-button" style = "border-radius: 5px;"  href="{{site.Params.cv_url}}">
             Download my CV
           </a>
         </div>
