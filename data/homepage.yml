@@ -5,9 +5,9 @@ banner:
 # about
 about:
   enable : true
-  content : "College graduate with a strong computer science background and experience in exploratory data analysis, machine learning, and statistics. As a Passionate about learning new topics in data science, 
-  visualizing data, and doing research. I am like sharing valuable insights and making an impact that helps others learn through.
-  code, visualizations, and narratives. Frequent competitor at Kaggle competitions. I’m always open for discussions, so feel free to ask any questions or concerns, I will."
+  content : "A college graduate with a strong Mathematical & Computing background and experience in exploratory data analysis, machine learning, and statistics. Am very passionate about learning new topics in data science, 
+  visualizing data, and doing research. I like sharing valuable insights and making an impact that helps others learn to code, visualize, and narrate confidently what they accomplished. Frequent competitor at Kaggle competitions. 
+  I’m always open for discussions, so feel free to ask any questions or concerns, I will."
   button:
     enable : true
     label : "know more"

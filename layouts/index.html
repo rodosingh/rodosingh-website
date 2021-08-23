@@ -117,7 +117,7 @@
             {{ range first 3 (where .Site.RegularPages "Section" "portfolio")}} {{ .Render "post" }} {{ end }}
         </div>
         <div style="text-align: center; width:100%; text-align: center; margin: 20px">
-            <a href="{{ site.Data.homepage.blog.URL | absURL }}" style="bottom: 0; border-radius: 10px"
+            <a href="{{ site.Data.homepage.portfolio.URL | absURL }}" style="bottom: 0; border-radius: 10px"
                 class="cv-button">View All</a>
         </div>
     </div>
@@ -289,7 +289,7 @@
             <img class="modal-content" id="img01">
         </div>
         <div style="text-align: center; width:100%; text-align: center; margin: 20px">
-            <a href="{{ site.Data.homepage.portfolio.URL | absURL }}" style="bottom: 0; border-radius: 10px" class="cv-button">View All</a>
+            <a href="{{ site.Data.homepage.blog.URL | absURL }}" style="bottom: 0; border-radius: 10px" class="cv-button">View All</a>
         </div>
     </div>
 </section>
