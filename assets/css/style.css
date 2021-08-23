@@ -517,9 +517,10 @@ textarea.form-control {
 /* The Close Button */
 .close {
   position: relative;
+  z-index:1;
   top: 15px;
   right: 35px;
-  color: #001a33;
+  color: #0dfff3;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;

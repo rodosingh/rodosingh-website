@@ -19,7 +19,7 @@ skill:
   title : "Expertise"
   item:
     - title : "Machine Learning & Deep Learning"
-      progress : "95%"
+      progress : "90%"
       color : "#fdb157"
       description: "Essential Libraries: Numpy, Scikit-Learn, Tensorflow, Keras, PyTorch, & OpenCV"
       
@@ -29,7 +29,7 @@ skill:
       description: "Libraries: Tablaeu, Seaborn, Pandas, GNUPlot, Origin"
       
     - title : "Other Software and Tools"
-      progress : "75%"
+      progress : "70%"
       color : "#bdecf6"
       description: "Matlab, R, C, Git, LATEX"
       
