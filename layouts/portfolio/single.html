@@ -20,12 +20,12 @@
               </div>
             </div>
           </div>
-          {{ with .Params.Client}}
+          {{ with .Params.Author}}
           <div class="col-sm-6 mb-5">
             <div class="project-meta">
               <i class="ti-user"></i>
               <div class="ml-3">
-                <h4>Client</h4>
+                <h4>Author</h4>
                 <p>{{. | markdownify}}</p>
               </div>
             </div>
@@ -54,7 +54,7 @@
         </div>
       </div>
       <div class="col-lg-11">
-        <div class="content">{{.Content}}</div>
+        <div class="content"><p>{{.Content}}</p></div>
       </div>
     </div>
   </div>

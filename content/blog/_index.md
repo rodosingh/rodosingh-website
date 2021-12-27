@@ -1,5 +1,5 @@
 ---
-title: "My Photos"
+title: "Gallery"
 description: "This is meta description."
 draft: false
 ---

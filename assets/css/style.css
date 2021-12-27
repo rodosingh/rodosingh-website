@@ -14,7 +14,8 @@ VERSION: Versoin Number
 
 body {
   line-height: 1.2;
-  font-family: roboto, sans-serif;
+  font-family: "Mulish";
+  /*<!--roboto, sans-serif;*/
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #4c4c4c
@@ -25,7 +26,8 @@ p {
   color: #4c4c4c;
   font-size: 15px;
   line-height: 1.8;
-  font-family: roboto, sans-serif
+  font-family: "Mulish"
+    /*roboto, sans-serif*/
 }
 
 h1,
@@ -35,7 +37,8 @@ h4,
 h5,
 h6 {
   color: #000;
-  font-family: playfair display, serif;
+  font-family: "Mulish";
+  /*playfair display, serif;*/
   line-height: 1.2
 }
 
@@ -87,7 +90,8 @@ h6,
 
 .btn {
   font-size: 20px;
-  font-family: playfair display, serif;
+  font-family: "Mulish";
+  /*playfair display, serif;*/
   text-transform: capitalize;
   padding: 0px 40px 20px 44px;
   border-radius: 5px;
@@ -180,23 +184,29 @@ ul {
   margin: 0
 }
 
+ul li a:hover, ul li a:focus {
+  color: #3ef8f4 !important;
+}
+
 img {
   vertical-align: middle;
   border: 0
 }
 
-.img-author-class{
-  float:left; 
-  margin-right:20px; 
+.img-author-class {
+  float: left;
+  margin-right: 20px;
   border: 3px solid #001a33;
   border-radius: 10px;
   padding: 7px
 }
+
 .edu-icons {
   width: 150px;
   height: auto;
   padding-right: 35px;
 }
+
 a,
 a:hover,
 a:focus {
@@ -219,9 +229,10 @@ select:focus {
 a.text-dark:hover {
   color: var(--primary-color) !important
 }
-a.cv-button{
+
+a.cv-button {
   width: 320px;
-  border: 3px solid #001a33; 
+  border: 3px solid #001a33;
   margin: 30px;
   background-color: rgb(255, 255, 255);
   text-transform: capitalize;
@@ -231,14 +242,17 @@ a.cv-button{
   font-size: 20px;
   transition: 0.3s
 }
+
 a.cv-button:hover {
   background-color: #001a33 !important;
   color: rgb(255, 255, 255) !important;
   box-shadow: 0 18px 39.1px 10px rgba(46, 48, 51, 0.37) !important;
 }
+
 a.know-more {
   font-size: 20px;
-  font-family: playfair display, serif;
+  font-family: "Mulish";
+  /*playfair display, serif;*/
   text-transform: capitalize;
   padding: 0px 40px 20px 44px;
   border-radius: 5px;
@@ -248,10 +262,12 @@ a.know-more {
   z-index: 1;
   transition: .2s ease
 }
+
 a.know-more:hover {
-  color:#001a33 !important;
+  color: #001a33 !important;
   text-decoration: underline !important;
 }
+
 a.social-icons:hover {
   box-shadow: 0px 12px 35px 12px rgba(53, 55, 59, 0.377) !important;
 }
@@ -368,6 +384,10 @@ a:hover {
   margin-bottom: 100px !important
 }
 
+.title-padding {
+  margin-top: 50px !important
+}
+
 .zindex-1 {
   z-index: 1
 }
@@ -469,20 +489,30 @@ textarea.form-control {
 .card-footer {
   border: 0
 }
+
 /*************************************************Modal CSS*************************************************************/
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 3; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 3;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
@@ -491,13 +521,14 @@ textarea.form-control {
   display: block;
   width: 90%;
   max-width: 700px;
-  background-color:rgb(27, 22, 22);
-  position:relative;
-  padding:0;
-  outline:0
+  background-color: rgb(27, 22, 22);
+  position: relative;
+  padding: 0;
+  outline: 0
 }
+
 /* Add Animation */
-.modal-content {  
+.modal-content {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -505,19 +536,29 @@ textarea.form-control {
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 /* The Close Button */
 .close {
   position: relative;
-  z-index:1;
+  z-index: 1;
   top: 15px;
   right: 35px;
   color: #0dfff3;
@@ -534,27 +575,28 @@ textarea.form-control {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
 }
+
 /******************************************************************************************************************/
 
 
 .navigation {
-  padding: 40px 130px;
+  padding: 33px 130px;
   transition: .3s ease
 }
 
 .navigation.nav-bg {
   background-color: var(--primary-color);
-  padding: 15px 100px
+  padding: 5px 100px
 }
 
 @media(max-width:991px) {
   .navigation.nav-bg {
-    padding: 15px 20px
+    padding: 5px 20px
   }
 }
 
@@ -571,7 +613,7 @@ textarea.form-control {
   padding: 15px
 }
 
-.navbar .nav-item.active .nav-link{
+.navbar .nav-item.active .nav-link {
   color: #52f8f4;
 }
 
@@ -883,7 +925,8 @@ blockquote {
 }
 
 .content strong {
-  font-family: playfair display, serif;
+  font-family: "Mulish";
+  /*playfair display, serif;*/
   font-size: 22px;
   font-weight: 400;
   color: #000;
@@ -1013,25 +1056,25 @@ blockquote {
   font-weight: 700
 }
 
-.social-icons a{
+.social-icons a {
   height: 100px;
   width: 100px;
   line-height: 102px;
   border-radius: 50%;
   display: block;
-  box-shadow:  0 18px 39.1px 6.9px rgba(224,241,255,.34);
+  box-shadow: 0 18px 39.1px 6.9px rgba(224, 241, 255, .34);
   color: #fff;
   background-color: var(--primary-color);
   font-size: 20px;
   text-align: center;
 }
 
-.project-meta{
+.project-meta {
   display: flex;
   align-items: center;
 }
 
-.project-meta i{
+.project-meta i {
   height: 100px;
   min-width: 100px;
   line-height: 100px;
@@ -1040,15 +1083,15 @@ blockquote {
   border-radius: 50%;
   text-align: center;
   display: block;
-  box-shadow:  0 18px 39.1px 6.9px rgba(224,241,255,.34);
+  box-shadow: 0 18px 39.1px 6.9px rgba(224, 241, 255, .34);
   font-size: 30px;
 }
 
-.project-meta h4{
+.project-meta h4 {
   font-weight: bold;
   font-size: 24px;
 }
 
-.project-meta p{
+.project-meta p {
   margin-bottom: 0;
 }
