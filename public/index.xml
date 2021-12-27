@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rodo</title>
+    <link>/</link>
+    <description>Recent content on Rodo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazon increase income 1.5 Million</title>
+      <link>/blog/post-1/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/blog/post-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amazon increase income 1.5 Million</title>
+      <link>/blog/post-2/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/blog/post-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amazon increase income 1.5 Million</title>
+      <link>/blog/post-3/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/blog/post-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amazon increase income 1.5 Million</title>
+      <link>/blog/post-4/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/blog/post-4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amazon increase income 1.5 Million</title>
+      <link>/blog/post-5/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/blog/post-5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amazon increase income 1.5 Million</title>
+      <link>/blog/post-6/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/blog/post-6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Earthquake Classification</title>
+      <link>/portfolio/project-8/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-8/</guid>
+      <description>Project Overview This project&amp;rsquo;s mainly deals with Extensive EDA, Model Training with Hyperparameter tuning and Cross-Validation.</description>
+    </item>
+    
+    <item>
+      <title>Face Recognition of Avengers with FaceNet</title>
+      <link>/portfolio/project-2/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-2/</guid>
+      <description>Project Overview Used pre-trained FaceNet architecture, we performed face recognition task for Avengers using Triplet Loss as our loss function.</description>
+    </item>
+    
+    <item>
+      <title>Fun Project - Tesellate</title>
+      <link>/portfolio/project-9/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-9/</guid>
+      <description>Overview Here one can see some beatiful patterns which are mostly inspired from natures&#39; art like branches, snowflake design, etc and some from mathematical artform.</description>
+    </item>
+    
+    <item>
+      <title>Multi-Label Classification on Remote-Sensing Images</title>
+      <link>/portfolio/project-1/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-1/</guid>
+      <description>Abstract Acquiring information on large areas on the earth’s surface through satellite cameras allows us to see much more than we can see while standing on the ground.</description>
+    </item>
+    
+    <item>
+      <title>SEIR Modelling of COVID-19</title>
+      <link>/portfolio/project-5/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-5/</guid>
+      <description>Project Overview Performed time-series prediction of Covid-19 infections through SEIR model.</description>
+    </item>
+    
+    <item>
+      <title>Table-Tennis shot classification using OpenPose</title>
+      <link>/portfolio/project-3/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-3/</guid>
+      <description>Project Overview To classify whether the shot played in the given video is backhand or forehand.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial - Deep-Learning Specialization Course Series</title>
+      <link>/portfolio/project-7/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-7/</guid>
+      <description>Tutorial Overview This includes the solution files for the programming assignments of each of the 5 courses in Deep Learning Series.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial - Digital Image Processing</title>
+      <link>/portfolio/project-6/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-6/</guid>
+      <description>Tutorial Outline This tutorial covers almost from Introduction level to Advanced level of Image Processing.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial - ML Coursera by Dr. Andrew Ng</title>
+      <link>/portfolio/project-4/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-4/</guid>
+      <description>Tutorial Overview &amp;quot;Machine Learning&amp;quot; by Dr. Andrew Ng of Stanford. There are total 11 weeks and each week has some programming assignment which is listed here.</description>
+    </item>
+    
+  </channel>
+</rss>

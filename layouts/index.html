@@ -187,10 +187,10 @@
 {{ end }}
 {{ end }}
 
-<!--
-{{ if site.Data.homepage.experience.enable }} {{ with site.Data.homepage.experience }}-->
+{{ if site.Data.homepage.experience.enable }}
+{{ with site.Data.homepage.experience }}
 <!-- experience -->
-<!--<section class="section">
+<section class="section">
     <div class="container">
         <div class="row justify-content-around">
             <div class="col-lg-12 text-center">
@@ -206,23 +206,21 @@
             {{ end }}
         </div>
     </div>
-</section>-->
+</section>
 <!-- /experience -->
-<!--{{ end }}
-{{ end }}-->
+{{ end }}
+{{ end }}
 
 
-
-<!--{{ if site.Data.homepage.clients_logo_slider.enable }}-->
+{{ if site.Data.homepage.clients_logo_slider.enable }}
 <!--client logo slider -->
-<!--<section class="section pb-0">
+<section class="section pb-0">
     <div class="container">
         {{ partial "client-slider.html" . }}
     </div>
-</section>-->
+</section>
 <!-- /client logo slider -->
-<!--{{ end }}-->
-
+{{ end }}
 
 
 {{ if site.Data.homepage.testimonial.enable }} {{ with site.Data.homepage.testimonial }}

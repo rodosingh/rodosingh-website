@@ -45,7 +45,7 @@ skill:
 
 # experience
 experience:
-  enable : true
+  enable : false
   title : ""
   item: 
     - logo : "images/experience/icon-1.png"
@@ -136,7 +136,7 @@ portfolio:
 
 # testimonial
 testimonial:
-  enable : true
+  enable : false
   title : "Testimonials"
   item:
     - name : "Jesica Gomez"
@@ -166,7 +166,7 @@ testimonial:
 
 # client logo slider
 clients_logo_slider:
-  enable : true
+  enable : false
   item:
     - logo : "images/clients-logo/client-logo-1.png"
       URL : "http://examplesite.com"

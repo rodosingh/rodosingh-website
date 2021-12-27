@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>design on Rodo</title>
+    <link>/categories/design/</link>
+    <description>Recent content in design on Rodo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate><atom:link href="/categories/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tutorial - ML Coursera by Dr. Andrew Ng</title>
+      <link>/portfolio/project-4/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-4/</guid>
+      <description>Tutorial Overview &amp;quot;Machine Learning&amp;quot; by Dr. Andrew Ng of Stanford. There are total 11 weeks and each week has some programming assignment which is listed here.</description>
+    </item>
+    
+  </channel>
+</rss>

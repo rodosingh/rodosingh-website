@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "http://examplesite.com"
+baseURL = "https://rodosingh.netlify.com"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"
@@ -68,7 +68,7 @@ description = "A Data Fanatic"
 # google analytics
 google_analytics_id = "" # Your ID
 # copyright
-copyright = "Copyright &copy; 2021 <br /> Made with &hearts; by [Rodosingh](https://github.com/rodosingh)"
+copyright = "Copyright &copy; 2022 <br/> Made with &hearts; by [rodosingh](https://www.linkedin.com/in/aditya-singh-9639a8175/) | Powered by [Hugo](https://gohugo.io/) | Published by [Netlify](https://www.netlify.com/)"
 
 
 # preloader
