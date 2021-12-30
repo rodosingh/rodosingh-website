@@ -187,7 +187,7 @@ ol.a {list-style-type: decimal}/*class a of ordered list*/
 ol.b {list-style-type: lower-alpha;}
 
 ul li a:hover, ul li a:focus {
-  color: #3ef8f4 !important;
+  color: #fe9f44 !important;
 }
 
 img {
@@ -563,7 +563,7 @@ textarea.form-control {
   z-index: 1;
   top: 15px;
   right: 35px;
-  color: #0dfff3;
+  color: #fe9f44;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -583,7 +583,35 @@ textarea.form-control {
   }
 }
 
-/******************************************************************************************************************/
+/******************************************About Section******************************************/
+.left {
+  float: left;
+  width: 30%; /* The width is 20%, by default */
+}
+
+.right {
+  float: left;
+  width: 70%; /* The width is 20%, by default */
+}
+
+@media screen and (max-width: 800px) {
+  .left, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+/*.about-section {
+  margin-left: 40%;
+  position: relative;
+}
+
+@media screen and (min-width: 300px) {
+  .about-section {
+    font-size: 12.6em;
+    white-space: nowrap 
+  }
+} */
+
+/*************************************************************************************************/
 
 
 .navigation {
@@ -616,7 +644,7 @@ textarea.form-control {
 }
 
 .navbar .nav-item.active .nav-link {
-  color: #52f8f4;
+  color: #fe9f44;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -624,13 +652,13 @@ textarea.form-control {
 }
 
 .hero-area {
-  padding: 250px 0 200px;
+  padding: 300px 0 200px;
   position: relative
 }
 
 @media(max-width:767px) {
   .hero-area {
-    padding: 200px 0 150px;
+    padding: 250px 0 150px;
     overflow: hidden
   }
 }
@@ -819,7 +847,7 @@ textarea.form-control {
 }
 
 .testimonial-content strong {
-  color: #2bfdff;
+  color: #fe9f44;
   font-weight: 400
 }
 

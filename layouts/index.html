@@ -5,16 +5,19 @@
 <section class="hero-area bg-primary overflow-hidden" id="parallax">
     <div class="container">
         <!-- social icon -->
-        <ul class="list-unstyled mt-3 position-relative zindex-1" style="float: left; padding-top: 1.3cm;">
+        <ul class="list-unstyled mt-3 position-relative zindex-1"
+            style="float: left; padding-top: 1.3cm; margin-left: 0;">
             {{ range site.Params.social }}
-            <li class="mb-3 "><a class="text-white" href="{{.URL | safeURL }} " target="_blank"><i class="{{.icon}}"></i></a>
+            <li class="mb-3 "><a class="text-white" href="{{.URL | safeURL }} " target="_blank"><i
+                        class="{{.icon}}"></i></a>
             </li>
             {{ end }}
         </ul>
         <!-- /social icon -->
         <div class="row">
             <div class="col-lg-11 mx-auto">
-                <h1 class="text-white font-tertiary title-padding mb-5">{{ site.Data.homepage.banner.title | safeHTML }}</h1>
+                <h1 class="text-white font-tertiary title-padding mb-5">{{ site.Data.homepage.banner.title | safeHTML }}
+                </h1>
             </div>
         </div>
     </div>
@@ -45,7 +48,7 @@
     <div class="layer" id="l9">
         <img src="{{`images/illustrations/leaf-cyan-2.svg` | relURL}}" alt="bg-shape">
     </div>
-    
+
 </section>
 <!-- /hero area -->
 
@@ -54,25 +57,33 @@
 <section class="section">
     <div class="container">
         <div class="row">
+            {{ with site.Data.homepage.about }}<!--It should be outside as .button.enable access it-->
             <div class="col-lg-10 mx-auto text-left">
-                {{ with site.Data.homepage.about }}
-                <p class="lead text-dark p3" style="font-size: 16px;"><img src="images/about/author.jpg" alt="Aditya Kumar Singh"  height = "250" class = "img-author-class">{{.content | markdownify}}</p>
-                <!--font-secondary-->
-                {{ if .button.enable }} {{ with .button }}
-                <div style = "text-align: center; margin: 40px; position: relative;">
-                    <a href="{{ .URL | absURL }}" class="cv-button" style="color: #001a33; border-radius:10px">{{.label}}</a>
+                <div class="left">
+                    <img src="images/about/author.jpg" alt="Aditya Kumar Singh" height="250" class="img-author-class">
                 </div>
-                {{ end }}
-                {{ end }}
+                <div class="right" style="padding-left: 2%;">
+                    <p class="lead text-dark p3" style="font-size: 16px;">
+                        {{.content | markdownify}}
+                    </p>
+                </div>
+            </div>
+            <!--font-secondary-->
+            <div style="margin: auto; position: relative; padding-top: 1em;">
+                {{ if .button.enable }} {{ with .button }}
+                <a href="{{ .URL | absURL }}" class="cv-button"
+                    style="color: #001a33; border-radius:10px; white-space: nowrap">{{.label}}</a>
+                {{ end }}<!--For if condition-->
                 {{ end }}
             </div>
+            {{ end }}<!--For with.Data.homepage.about-->
         </div>
     </div>
 </section>
 <!-- /about -->
-{{ end }} 
+{{ end }}
 
-{{ if site.Data.homepage.education.enable }} 
+{{ if site.Data.homepage.education.enable }}
 {{ with site.Data.homepage.education }}
 <!-- education -->
 <section class="section position-relative">
@@ -95,11 +106,13 @@
                 </div>
             </div>
             {{ end }}
+            <!--
             {{with site.Data.homepage.about.button}}
             <div style="text-align: center; width:100%;">
                 <a href = "{{ .URL | absURL}}#edu" style="bottom: 0; border-radius: 10px" class="cv-button"> Know More</a>
             </div>
             {{end}}
+            -->
         </div>
     </div>
     <!-- bg image -->
@@ -119,8 +132,8 @@
             </div>
             {{ range first 3 (where .Site.RegularPages "Section" "portfolio")}} {{ .Render "post" }} {{ end }}
         </div>
-        <div style="text-align: center; width:100%; text-align: center; margin: 20px">
-            <a href="{{ site.Data.homepage.portfolio.URL | absURL }}" style="bottom: 0; border-radius: 10px"
+        <div style="text-align: center; width:100%; margin: auto; padding-top: 3%;">
+            <a href="{{ site.Data.homepage.portfolio.URL | absURL }}" style="bottom: 0; border-radius: 10px; white-space:nowrap"
                 class="cv-button">View All</a>
         </div>
     </div>
@@ -128,7 +141,7 @@
 <!-- /projects -->
 {{ end }}
 
-{{ if site.Data.homepage.skill.enable }} 
+{{ if site.Data.homepage.skill.enable }}
 {{ with site.Data.homepage.skill }}
 <!-- skills -->
 <section class="section">
@@ -272,7 +285,8 @@
             "Section" "blog") }}
             <div class="col-lg-4 col-6 mb-4 shuffle-item">
                 <div class="position-relative rounded hover-wrapper">
-                    <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block" onclick ="onClick(this)">
+                    <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block"
+                        onclick="onClick(this)">
                     <!--
                     <div class="hover-overlay">
                         <div class="hover-content">
@@ -289,8 +303,9 @@
             <span class="close">&times;</span>
             <img class="modal-content" id="img01">
         </div>
-        <div style="text-align: center; width:100%; text-align: center; margin: 20px">
-            <a href="{{ site.Data.homepage.blog.URL | absURL }}" style="bottom: 0; border-radius: 10px" class="cv-button">View All</a>
+        <div style="padding-top: 2%; width:100%; text-align: center; margin: auto;">
+            <a href="{{ site.Data.homepage.blog.URL | absURL }}" style="bottom: 0; border-radius: 10px; white-space:nowrap"
+                class="cv-button">View All</a>
         </div>
     </div>
 </section>
