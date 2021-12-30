@@ -595,8 +595,12 @@ textarea.form-control {
 }
 
 @media screen and (max-width: 800px) {
-  .left, .right {
+  .left {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    padding-top: 8%;
   }
 }
 /*.about-section {

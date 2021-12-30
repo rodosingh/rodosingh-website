@@ -1,8 +1,8 @@
 ---
-title: "Amazon increase income 1.5 Million"
+title: ""
 date: 2019-05-12T12:14:34+06:00
-image: "images/my_photos/feast1.jpg"
-categories: ["feast"]
+image: "images/my_photos/cp5.jpg"
+categories: ["College Pics"]
 description: "This is meta description."
 draft: false
 ---
