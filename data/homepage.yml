@@ -120,18 +120,18 @@ service:
       highlighted : false
 
 # blog
-blog:
+projects:
   enable : true
   title : "Projects"
-  URL: "blog"
+  URL: "projects"
   # blog post comes from "content/blog" folder
 
 # portfolio
-portfolio:
+gallery:
   enable : true
   title : "Gallery"
-  item_show : 5
-  URL : "portfolio"
+  item_show : 6
+  URL : "gallery"
   # portfolio item comes from 'data/portfolio.yml' item.
 
 # testimonial
@@ -197,4 +197,3 @@ clients_logo_slider:
       
     - logo : "images/clients-logo/client-logo-5.png"
       URL : "#"
-

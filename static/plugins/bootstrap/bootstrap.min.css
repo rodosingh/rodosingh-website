@@ -466,12 +466,17 @@ mark {
     padding: .2em;
     background-color: #fcf8e3
 }
-
+/************************************** Unstyled List ************************************/
 .list-unstyled {
     padding-left: 0;
     list-style: none
 }
+/*@media screen  and (max-width: 800px){
+    .list-unstyled {
 
+    }
+}*/
+/*****************************************************************************************/
 .list-inline {
     padding-left: 0;
     list-style: none

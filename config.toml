@@ -34,12 +34,12 @@ name = "About"
 weight = 1
 
 [[menu.main]]
-URL = "portfolio"
+URL = "projects"
 name = "Projects"
 weight = 2
 
 [[menu.main]]
-URL = "blog"
+URL = "gallery"
 name = "Gallery"
 weight = 3
 
@@ -121,5 +121,5 @@ icon = "ti-instagram"
 URL = "https://www.instagram.com/rodosingh/"
 
 [[params.social]]
-icon = "ti-music-alt"
+icon = "ti-music"
 URL = "https://open.spotify.com/user/312ybkhvukb4xot5q675x2kwkp6m"

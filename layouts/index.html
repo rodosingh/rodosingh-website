@@ -3,21 +3,21 @@
 <!-- hero area -->
 <!--style="background-image: url(images/pexels-pixabay-355465.jpg);"-->
 <section class="hero-area bg-primary overflow-hidden" id="parallax">
-    <div class="container">
+    <div id = "both">
         <!-- social icon -->
-        <ul class="list-unstyled mt-3 position-relative zindex-1"
-            style="float: left; padding-top: 1.3cm; margin-left: 0;">
+        <ul class="list-unstyled mt-3 position-relative zindex-1" id="social-icons">
             {{ range site.Params.social }}
-            <li class="mb-3 "><a class="text-white" href="{{.URL | safeURL }} " target="_blank"><i
-                        class="{{.icon}}"></i></a>
+            <li class="mb-3 "><a class="text-white" href="{{.URL | safeURL }} " target="_blank"><i class="{{.icon}}"></i></a>
             </li>
             {{ end }}
         </ul>
-        <!-- /social icon -->
-        <div class="row">
-            <div class="col-lg-11 mx-auto">
-                <h1 class="text-white font-tertiary title-padding mb-5">{{ site.Data.homepage.banner.title | safeHTML }}
-                </h1>
+        <div class="container">
+            <!-- Hey I'm Aditya -->
+            <div class="row">
+                <div class="col-lg-11 mx-auto">
+                    <h1 class="text-white font-tertiary title-padding mb-5">{{ site.Data.homepage.banner.title | safeHTML }}
+                    </h1>
+                </div>
             </div>
         </div>
     </div>
@@ -58,11 +58,11 @@
     <div class="container">
         <div class="row">
             {{ with site.Data.homepage.about }}<!--It should be outside as .button.enable access it-->
-            <div class="col-lg-10 mx-auto text-left">
+            <div class="col-lg-10 mx-auto text-left inline-to-block">
                 <div class="left">
                     <img src="images/about/author.jpg" alt="Aditya Kumar Singh" height="250" class="img-author-class">
                 </div>
-                <div class="right" style="padding-left: 2%;">
+                <div class="right" style="padding-left: 2%">
                     <p class="lead text-dark p3" style="font-size: 16px;">
                         {{.content | markdownify}}
                     </p>
@@ -122,18 +122,18 @@
 {{ end }}
 {{ end }}
 
-{{ if site.Data.homepage.blog.enable }}
+{{ if site.Data.homepage.projects.enable }}
 <!-- projects -->
 <section class="section">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="section-title">{{site.Data.homepage.blog.title | markdownify }}</h2>
+                <h2 class="section-title">{{site.Data.homepage.projects.title | markdownify }}</h2>
             </div>
-            {{ range first 3 (where .Site.RegularPages "Section" "portfolio")}} {{ .Render "post" }} {{ end }}
+            {{ range first 3 (where .Site.RegularPages "Section" "gallery")}} {{ .Render "post" }} {{ end }}
         </div>
         <div style="text-align: center; width:100%; margin: auto; padding-top: 3%;">
-            <a href="{{ site.Data.homepage.portfolio.URL | absURL }}" style="bottom: 0; border-radius: 10px; white-space:nowrap"
+            <a href="{{ site.Data.homepage.gallery.URL | absURL }}" style="bottom: 0; border-radius: 10px; white-space:nowrap"
                 class="cv-button">View All</a>
         </div>
     </div>
@@ -271,21 +271,21 @@
 {{ end }}
 {{ end }}
 
-{{ if site.Data.homepage.portfolio.enable }}
+{{ if site.Data.homepage.gallery.enable }}
 <!-- my photos -->
 <section class="section">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="section-title">{{ site.Data.homepage.portfolio.title | markdownify }}</h2>
+                <h2 class="section-title">{{ site.Data.homepage.gallery.title | markdownify }}</h2>
             </div>
         </div>
         <div class="row shuffle-wrapper">
-            {{ $item:= site.Data.homepage.portfolio.item_show }} {{ range first $item (where .Site.RegularPages
-            "Section" "blog") }}
+            {{ $item:= site.Data.homepage.gallery.item_show }} {{ range first $item (where .Site.RegularPages
+            "Section" "projects") }}
             <div class="col-lg-4 col-6 mb-4 shuffle-item">
                 <div class="position-relative rounded hover-wrapper">
-                    <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block"
+                    <img src="{{.Params.image | absURL }}" alt="gallery-image" class="img-fluid rounded w-100 d-block"
                         onclick="onClick(this)">
                     <!--
                     <div class="hover-overlay">
@@ -304,7 +304,7 @@
             <img class="modal-content" id="img01">
         </div>
         <div style="padding-top: 2%; width:100%; text-align: center; margin: auto;">
-            <a href="{{ site.Data.homepage.blog.URL | absURL }}" style="bottom: 0; border-radius: 10px; white-space:nowrap"
+            <a href="{{ site.Data.homepage.projects.URL | absURL }}" style="bottom: 0; border-radius: 10px; white-space:nowrap"
                 class="cv-button">View All</a>
         </div>
     </div>
