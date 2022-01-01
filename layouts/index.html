@@ -26,29 +26,31 @@
     <div class="layer-bg w-100">
         <img class="img-fluid w-100" src="{{`images/illustrations/leaf-bg.png` | relURL}}" alt="bg-shape">
     </div>
-    <div class="layer" id="l2">
-        <img src="{{`images/illustrations/dots-cyan.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l3">
-        <img src="{{`images/illustrations/leaf-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l4">
-        <img src="{{`images/illustrations/dots-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l5">
-        <img src="{{`images/illustrations/leaf-yellow.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l6">
-        <img src="{{`images/illustrations/leaf-cyan.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l7">
-        <img src="{{`images/illustrations/dots-group-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l8">
-        <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l9">
-        <img src="{{`images/illustrations/leaf-cyan-2.svg` | relURL}}" alt="bg-shape">
+    <div class="illustration-handler">
+        <div class="layer" id="l2">
+            <img src="{{`images/illustrations/dots-cyan.svg` | relURL}}" alt="bg-shape">
+        </div>
+        <div class="layer" id="l3">
+            <img src="{{`images/illustrations/leaf-orange.svg` | relURL}}" alt="bg-shape">
+        </div>
+        <div class="layer" id="l4">
+            <img src="{{`images/illustrations/dots-orange.svg` | relURL}}" alt="bg-shape">
+        </div>
+        <div class="layer" id="l5">
+            <img src="{{`images/illustrations/leaf-yellow.svg` | relURL}}" alt="bg-shape">
+        </div>
+        <div class="layer" id="l6">
+            <img src="{{`images/illustrations/leaf-cyan.svg` | relURL}}" alt="bg-shape">
+        </div>
+        <div class="layer" id="l7">
+            <img src="{{`images/illustrations/dots-group-orange.svg` | relURL}}" alt="bg-shape">
+        </div>
+        <div class="layer" id="l8">
+            <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL}}" alt="bg-shape">
+        </div>
+        <div class="layer" id="l9">
+            <img src="{{`images/illustrations/leaf-cyan-2.svg` | relURL}}" alt="bg-shape">
+        </div>
     </div>
 
 </section>
@@ -138,7 +140,7 @@
             {{ range first 3 (where .Site.RegularPages "Section" "projects")}} {{ .Render "post" }} {{ end }}
         </div>
         <div style="text-align: center; width:100%; margin: auto; padding-top: 3%;">
-            <a href="{{ site.Data.homepage.gallery.URL | absURL }}"
+            <a href="{{ site.Data.homepage.projects.URL | absURL }}"
                 style="bottom: 0; border-radius: 10px; white-space:nowrap" class="cv-button">View All</a>
         </div>
     </div>
@@ -306,10 +308,10 @@
         <!-- The Modal -->
         <div id="myModal" class="modal">
             <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
+            <img id="img01">
         </div>
         <div style="padding-top: 2%; width:100%; text-align: center; margin: auto;">
-            <a href="{{ site.Data.homepage.projects.URL | absURL }}"
+            <a href="{{ site.Data.homepage.gallery.URL | absURL }}"
                 style="bottom: 0; border-radius: 10px; white-space:nowrap" class="cv-button">View All</a>
         </div>
     </div>

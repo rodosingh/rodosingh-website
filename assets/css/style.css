@@ -503,7 +503,7 @@ textarea.form-control {
   /* Stay in place */
   z-index: 3; 
   /* Sit on top */
-  padding: 7% 0 0.5% 0;
+  padding: 8% 0 0.75% 0;
   /* Location of the box */
   left: 0;
   top: 0;
@@ -519,19 +519,17 @@ textarea.form-control {
 }
 
 /* Modal Content == (Class for image) */
-.modal-content {
+.modal img {
   margin: auto;
   display: block;
-  width: auto;
-  height: 100%;
-  background-color: rgb(27, 22, 22);
-  position: relative;
   padding: 0;
-  outline: 0
-}
-
-/* Add Animation */
-.modal-content {
+  outline: 0;
+  max-width: 100%;
+  height: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  /* Add Animation */
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -580,14 +578,24 @@ textarea.form-control {
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
   .modal {
-  padding: 7% 7% 0.5% 7%;
+  padding: 21% 10% 1.5% 10%;
   }
-  .modal-content {
+  .modal img {
+    width: auto;
     height: 100%;
-    width: auto
   }
 }
+/************************************* Home Page Title Illustrations  ****************************/
+.illustration-handler {
+  margin: 0;
+  padding: 0;
+}
 
+@media screen and (max-width: 700px) {
+  .illustration-handler {
+    display: none;
+  }
+}
 /******************************************About Section******************************************/
 .inline-to-block {
   display: flex;
@@ -1176,7 +1184,7 @@ blockquote {
 .project-meta p {
   margin-bottom: 0;
 }
-
+/*************************************** Map ************************************/
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
@@ -1187,9 +1195,17 @@ blockquote {
   margin: auto
 }
 
-.mapouter {
-  position: relative;
-  text-align: right;
-  height: 535px;
-  width: 914px;
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
