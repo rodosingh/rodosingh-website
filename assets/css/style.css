@@ -271,8 +271,9 @@ a.know-more:hover {
 }
 
 a.social-icons:hover {
-  box-shadow: 0px 12px 35px 12px rgba(53, 55, 59, 0.377) !important;
+  box-shadow: 0px 12px 35px 12px rgba(39, 40, 44, 0.514) !important;
 }
+
 
 a:hover {
   color: var(--primary-color)
@@ -416,7 +417,7 @@ a:hover {
 }
 
 .shadow {
-  box-shadow: 0 18px 39.1px 6.9px rgba(47, 50, 53, 0.37) !important
+  box-shadow: 0 18px 39.1px 6.9px rgba(39, 42, 44, 0.459) !important
 }
 
 .bg-dark {
@@ -599,7 +600,7 @@ textarea.form-control {
 
 .right {
   width: 70%;
-  margin-left: 6%;
+  margin-left: 5%;
 }
 
 @media screen and (max-width: 800px) {
@@ -628,7 +629,7 @@ textarea.form-control {
   }
 } */
 /***************************************Unordered List - social icons****************************/
-#social-icons {
+#social-icons-1 {
   float: left;
   padding-top: 4.2%;
   margin-left: 2%;
@@ -649,7 +650,7 @@ textarea.form-control {
   #both {
     flex-direction: column-reverse;
   }
-  #social-icons {
+  #social-icons-1 {
     padding-top: 0.5%;
     margin-left: 7%;
   }
@@ -1142,6 +1143,13 @@ blockquote {
   text-align: center;
 }
 
+
+@media screen and (max-width: 800px) {
+  .social-icons a {
+    margin: 15%;
+  }
+}
+
 .project-meta {
   display: flex;
   align-items: center;
@@ -1167,4 +1175,21 @@ blockquote {
 
 .project-meta p {
   margin-bottom: 0;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 535px;
+  width: 914px;
+  /*border: 3px solid #001a33;
+  border-radius: 5px;*/
+  margin: auto
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 535px;
+  width: 914px;
 }

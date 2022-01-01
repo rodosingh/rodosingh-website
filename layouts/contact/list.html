@@ -9,13 +9,19 @@
       <div class="col-12 text-center">
         <h2 class="section-title">Find me on Google Map</h2>
       </div>
-      <div class="col-12">
-        {{ with site.Params.map }}
-        {{"<!-- Google Map -->" | safeHTML}}
-        <div class="shadow" id="map" data-latitude="{{ .map_latitude }}" data-longitude="{{ .map_longitude }}"
-          data-marker="{{ .map_marker | absURL }}" data-marker-name="{{ site.Title }}" style="height: 400px;"></div>
-        {{ end }}
+      <!--<div class="col-12">
+      </div>-->
+      {{ with site.Params.map }}
+      {{"<!-- Google Map -->" | safeHTML}}
+      <div class="gmap_canvas shadow">
+        <iframe width="914" height="535" id="gmap_canvas" src="{{ .gmap_api | absURL}}" frameborder="0" style="border:2rem"
+          scrolling="no" marginheight="0" marginwidth="0" allowfullscreen>
+        </iframe>
       </div>
+      <!--<div class="shadow" id="map" data-latitude="{{ .map_latitude }}" data-longitude="{{ .map_longitude }}"
+        data-marker="{{ .map_marker | absURL }}" data-marker-name="{{ site.Title }}" style="height: 400px;">
+      </div>-->
+      {{ end }}
     </div>
   </div>
 </section>
@@ -30,7 +36,7 @@
       <div class="col-12">
         <ul class="list-inline social-icons text-center">
           {{ range site.Params.social }}
-          <li class="list-inline-item"><a href="{{.URL}} " target="_blank" class = "social-icons"><i class="{{.icon}}"></i></a></li>
+          <li class="list-inline-item" style="padding: 0.75%;"><a href="{{.URL}} " target="_blank" class = "social-icons"><i class="{{.icon}}"></i></a></li>
           {{ end }}
         </ul>
       </div>
