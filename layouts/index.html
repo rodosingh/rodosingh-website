@@ -60,10 +60,10 @@
             {{ with site.Data.homepage.about }}<!--It should be outside as .button.enable access it-->
             <div class="col-lg-10 mx-auto text-left inline-to-block">
                 <div class="left">
-                    <img src="images/about/author.jpg" alt="Aditya Kumar Singh" height="250" class="img-author-class">
+                    <img src="images/about/author.jpg" alt="Aditya Kumar Singh" height="230" class="img-author-class">
                 </div>
-                <div class="right" style="padding-left: 2%">
-                    <p class="lead text-dark p3" style="font-size: 16px;">
+                <div class="right">
+                    <p class="lead text-dark p3" style="font-size: 15px;">
                         {{.content | markdownify}}
                     </p>
                 </div>
@@ -130,7 +130,7 @@
             <div class="col-12 text-center">
                 <h2 class="section-title">{{site.Data.homepage.projects.title | markdownify }}</h2>
             </div>
-            {{ range first 3 (where .Site.RegularPages "Section" "gallery")}} {{ .Render "post" }} {{ end }}
+            {{ range first 3 (where .Site.RegularPages "Section" "projects")}} {{ .Render "post" }} {{ end }}
         </div>
         <div style="text-align: center; width:100%; margin: auto; padding-top: 3%;">
             <a href="{{ site.Data.homepage.gallery.URL | absURL }}" style="bottom: 0; border-radius: 10px; white-space:nowrap"
@@ -282,7 +282,7 @@
         </div>
         <div class="row shuffle-wrapper">
             {{ $item:= site.Data.homepage.gallery.item_show }} {{ range first $item (where .Site.RegularPages
-            "Section" "projects") }}
+            "Section" "gallery") }}
             <div class="col-lg-4 col-6 mb-4 shuffle-item">
                 <div class="position-relative rounded hover-wrapper">
                     <img src="{{.Params.image | absURL }}" alt="gallery-image" class="img-fluid rounded w-100 d-block"
