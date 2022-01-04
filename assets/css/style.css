@@ -1213,3 +1213,7 @@ blockquote {
     width:100%;
     position:absolute;
 }
+/********************************* Honey Pot*****************************************/
+.hpot {
+  display: none;
+}

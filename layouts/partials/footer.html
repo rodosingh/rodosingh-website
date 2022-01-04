@@ -9,7 +9,12 @@
             <div class="col-lg-8 mx-auto">
                 <div class="bg-white rounded text-center p-5 shadow-down">
                     <h4 class="mb-80">Contact Form</h4>
-                    <form action="{{site.Params.contact.form_action}}" method="POST" class="row">
+                    <form method="POST" class="row" netlify-honeypot="hpfield" netlify>
+                        <!--https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/-->
+                        <!--action="{{site.Params.contact.form_action}}"-->
+                        <div class="hpot">
+                            <label>Leave this field empty: <input name="hpfield"></label>
+                        </div>
                         <div class="col-md-6">
                             <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
                         </div>
