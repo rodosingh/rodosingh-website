@@ -8,7 +8,7 @@ work_process:
     year : "Duration: 2021 -- 2023"
     academy : "International Institute of Information Technology, Hyderabad"
     fieldofstudy : Computer Science and Engineering 
-    score: "CGPA: --Not yet finished first Sem--"
+    # score: "CGPA: --Not yet finished first Sem--"
     subjects: "__Courses:__ Statistical Methods in AI; Digital Image Processing; Data Analytics I"
 
   - title : "5 Year BS-MS Dual Degree"
@@ -16,7 +16,7 @@ work_process:
     year : "Duration: 2016 -- 2021"
     academy : "Indian Institute of Science Education and Research, Kolkata"
     fieldofstudy : Mathematics and Statistics 
-    score: "CGPA: 8.16"
+    # score: "CGPA: 8.28"
     subjects: "__Courses:__ Programming and Data Structures II; C & Data Structures; Statistical Machine Learning & Network Analysis;
     Regression Analysis; Time-Series Analysis; Micro Economics; Multivariate Statistics; Statistics II (Computational); Statistical Inference I & II;
     Statistics Lab (with R); Probability I & II; Topology; Measure Theory; Commutative Algebra; Ring Theory; Group Theory; Advanced Linear Algebra; Linear Algebra I; 
@@ -27,7 +27,7 @@ work_process:
     year : "Duration: 2014 -- 2016"
     academy : "DAV Kalinga, MCL Area, Talcher, Angul"
     fieldofstudy : Science 
-    score: "Percentage: 96.83%"
+    # score: "Percentage: 96.83%"
     subjects: "__Subjects:__ Mathematics; Physics; Chemistry; Biology; English; Physical Education"
     
   - title : "All India Higher Secondary Examination"
@@ -35,7 +35,7 @@ work_process:
     year : "Duration: 2004 -- 2014"
     academy : "Maharishi Vidya Mandir, Angul"
     fieldofstudy : General
-    score: "CGPA: 10"
+    # score: "CGPA: 10"
     subjects: "__Subjects:__ Maths; Science; Social Sciences; English; Odia"
 
 
